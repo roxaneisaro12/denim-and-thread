@@ -44,15 +44,11 @@ a {
     text-decoration: none;
 }
 
-.nav-links a,
-.sidebar-bottom a {
-    display: block;
-    padding: 9px 12px;
-    margin: 2px 0;
-    color: #757575;
-    font-weight: bold;
-    text-decoration: none;
-    transition: background-color 0.3s, color 0.3s, padding-left 0.3s;
+.nav-links a:hover,
+.sidebar-bottom a:hover {
+    background: #f1f1f1;
+    color: #000;
+    padding-left: 18px;
 }
 
 .nav-links a:hover,
