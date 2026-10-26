@@ -18,4 +18,4 @@ DENIM & THREAD is a responsive clothing store website featuring jeans, jackets, 
 Open `index.html` in your web browser.
 
 ## Live Website
-The published website link will be added here after deployment.
+https://roxaneisaro12.github.io/denim-and-thread/
