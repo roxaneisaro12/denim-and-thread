@@ -470,3 +470,10 @@ a {
     letter-spacing: 0.5px;
     text-transform: uppercase;
 }
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #762d45;
+    outline-offset: 3px;
+}
