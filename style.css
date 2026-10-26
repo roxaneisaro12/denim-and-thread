@@ -477,3 +477,17 @@ textarea:focus-visible {
     outline: 3px solid #762d45;
     outline-offset: 3px;
 }
+@media screen and (max-width: 700px) {
+    .page-header {
+        flex-wrap: wrap;
+        padding: 15px 0;
+    }
+
+    .header-links {
+        flex-wrap: wrap;
+    }
+
+    .product-card .buy-button {
+        padding: 12px 6px;
+    }
+}
