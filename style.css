@@ -465,3 +465,8 @@ a {
     height: 100%;
     object-fit: cover;
 }
+.product-badge {
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
