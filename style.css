@@ -443,3 +443,15 @@ a {
 .logo:hover {
     color: #757575;
 }
+.product-card h3 {
+    line-height: 1.4;
+}
+
+.product-card .price {
+    font-size: 16px;
+}
+
+.product-card .buy-button {
+    font-weight: bold;
+    letter-spacing: 0.3px;
+}
