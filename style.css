@@ -26,6 +26,8 @@ body {
     overflow-y: auto;
     background: #fff;
     padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .logo {
@@ -38,9 +40,16 @@ body {
     text-decoration: none;
 }
 
+/* Keep navigation links vertical */
+.nav-links {
+    display: flex;
+    flex-direction: column;
+}
+
 .nav-links a,
 .sidebar-bottom a {
     display: block;
+    width: 100%;
     padding: 10px 12px;
     color: #757575;
     font-weight: bold;
@@ -59,7 +68,8 @@ body {
 }
 
 .sidebar-bottom {
-    margin-top: 35px;
+    margin-top: auto;
+    padding-top: 30px;
 }
 
 /* Main content */
@@ -74,6 +84,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 15px;
 }
 
 .page-header h1 {
@@ -197,6 +208,7 @@ body {
     font-size: 12px;
 }
 
+/* Product details */
 .product-card h3 {
     font-size: 15px;
     font-weight: normal;
@@ -270,7 +282,7 @@ body {
     background: #ccc;
 }
 
-/* Contact */
+/* Contact section */
 #contact {
     padding: 32px 0;
 }
@@ -292,7 +304,7 @@ body {
     background: #757575;
 }
 
-/* About */
+/* About section */
 #about {
     padding: 25px 0 35px;
     color: #555;
@@ -327,19 +339,22 @@ body {
         margin-bottom: 12px;
     }
 
+    /* Navigation remains vertical on mobile */
     .nav-links {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     .nav-links a,
     .sidebar-bottom a {
-        display: inline-block;
-        margin-right: 8px;
+        display: block;
+        width: 100%;
+        margin: 0;
     }
 
     .sidebar-bottom {
-        margin-top: 12px;
+        margin-top: 15px;
+        padding-top: 8px;
     }
 
     .main-content {
