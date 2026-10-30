@@ -4,214 +4,196 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> |DENIM & THREAD Everyday style</title>
+    <meta name="description" content="Clothing store featuring jeans and new arrivals.">
+    <title>Clothing Store</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-   
-<!-- Sidebar Navigation -->
-<nav class="sidebar">
-    <a href="#" class="logo">DENIM & THREAD</a>
+    <!-- Mobile menu control: CSS only -->
+    <input type="checkbox" id="menu-toggle">
 
-    <div class="nav-links">
-        <a href="#products">All Clothing</a>
-        <a href="#jeans">Jeans</a>
-        <a href="#jackets">Jackets</a>
-        <a href="#tshirts">T-Shirts</a>
+    <!-- Sidebar -->
+    <nav class="sidebar" aria-label="Main navigation">
+        <a href="#" class="logo">LOGO</a>
+
+        <a href="#products" class="nav-link">Shirts</a>
+        <a href="#products" class="nav-link">Dresses</a>
+
+       <details class="jeans-dropdown" open>
+    <summary class="nav-link active">Jeans</summary>
+
+    <div class="sub-menu">
+        <a href="#products">Skinny</a>
+        <a href="#products">Relaxed</a>
+        <a href="#products">Bootcut</a>
+        <a href="#products">Straight</a>
     </div>
+</details>
+        
 
-    <div class="sidebar-bottom">
-        <a href="#contact">Contact</a>
-        <a href="#newsletter">Newsletter</a>
-        <a href="#about">About Us</a>
-    </div>
-</nav>
+        <a href="#products" class="nav-link">Jackets</a>
+        <a href="#products" class="nav-link">Gymwear</a>
+        <a href="#products" class="nav-link">Blazers</a>
+        <a href="#products" class="nav-link">Shoes</a>
 
+        <div class="sidebar-bottom">
+            <a href="#contact">Contact</a>
+            <a href="#newsletter">Newsletter</a>
+            <a href="#newsletter">Subscribe</a>
+        </div>
+    </nav>
 
-    <!-- Main Website Content -->
+    <!-- Main page -->
     <main class="main-content">
 
-        <!-- Page Heading -->
-        <header class="page-header">
-    <h1>Everyday Essentials</h1>
-    <div class="header-links">
-        <a href="#products">Shop Collection</a>
-        <a href="#contact">Contact</a>
-    </div>
-</header>
+        <!-- Header -->
+        <header class="top-header">
+            <label for="menu-toggle" class="menu-button">☰</label>
+            <h1>Jeans</h1>
+            <div class="header-icons">
+                <span aria-label="Search">⌕</span>
+                <span aria-label="Shopping bag">▢</span>
+            </div>
+        </header>
 
-        <!-- Hero Banner -->
-        <section id="hero">
-    <div class="hero-content">
-        <h2>Find Your Style</h2>
-        <p>JEANS. JACKETS. T-SHIRTS.</p>
-        <a href="#products" class="shop-button">SHOP COLLECTION</a>
-    </div>
-</section>
+        <!-- Hero banner -->
+        <section class="hero" aria-label="New arrivals">
+        <img src="images/w3-jeans.jpg" alt="Jeans collection"> 
+            <div class="hero-text">
+                <h2>New arrivals</h2>
+                <p>COLLECTION 2016</p>
+                <a href="#products" class="shop-button">SHOP NOW</a>
+            </div>
+        </section>
 
-        <!-- Product Section -->
-        <section id="products">
+        <!-- Products -->
+        <section class="products-section" id="products">
             <p class="item-count">8 items</p>
 
             <div class="product-grid">
 
-                <article class="product-card" id="jeans">
-                    <div class="product-image">
-                        <img src="images/jean1.jpg" alt="Blue ripped skinny jeans">
-                        <span class="product-badge">New</span>
-                    </div>
+                <article class="product-card">
+                    <img src="images/w3-jeans1.jpg" alt="Ripped Skinny Jeans">
                     <h3>Ripped Skinny Jeans</h3>
-                    <p class="price">$24.99</p>
-                    <a href="#contact" class="buy-button">Enquire Now</a>
+                    <p>$24.99</p>
+                </article>
+
+                <article class="product-card">
+                    <img src="images/w3-jeans2.jpg" alt="Mega Ripped Jeans">
+                    <h3>Mega Ripped Jeans</h3>
+                    <p>$19.99</p>
                 </article>
 
                 <article class="product-card">
                     <div class="product-image">
-                        <img src="images/jean2.jpg" alt="Blue denim jeans">
+                        <img src="images/w3-jeans2.jpg" alt="Mega Ripped Jeans">
+                        <span class="new-label">New</span>
+                        <a href="#contact" class="buy-button">Buy now</a>
                     </div>
                     <h3>Mega Ripped Jeans</h3>
-                    <p class="price">$19.99</p>
-                    <a href="#contact" class="buy-button">Enquire Now</a>
+                    <p>$19.99</p>
                 </article>
 
                 <article class="product-card">
-                    <div class="product-image">
-                        <img src="images/jean3.jpg" alt="Dark denim skinny jeans">
-                    </div>
+                    <img src="images/w3-jeans3.jpg" alt="Washed Skinny Jeans">
                     <h3>Washed Skinny Jeans</h3>
-                    <p class="price">$20.50</p>
-                    <a href="#contact" class="buy-button">Enquire Now</a>
+                    <p>$20.50</p>
+                </article>
+
+                <article class="product-card">
+                    <img src="images/w3-jeans3.jpg" alt="Washed Skinny Jeans">
+                    <h3>Washed Skinny Jeans</h3>
+                    <p>$20.50</p>
                 </article>
 
                 <article class="product-card">
                     <div class="product-image">
-                        <img src="images/jean4.jpg" alt="Light blue denim jeans">
-                        <span class="product-badge">Sale</span>
+                        <img src="images/w3-jeans4.jpg" alt="Vintage Skinny Jeans">
+                        <span class="sale-label">Sale</span>
+                        <a href="#contact" class="buy-button">Buy now</a>
                     </div>
                     <h3>Vintage Skinny Jeans</h3>
-                    <p class="price"><del>$24.99</del> $14.99</p>
-                    <a href="#contact" class="buy-button">Enquire Now</a>
-                </article>
-
-                <article class="product-card" id="jackets">
-                    <div class="product-image">
-                        <img src="images/jacket.jpg" alt="Denim jacket">
-                    </div>
-                    <h3>Denim Jacket</h3>
-                    <p class="price">$29.99</p>
-                    <a href="#contact" class="buy-button">Enquire Now</a>
-                </article>
-
-                <article class="product-card" id="tshirts">
-                    <div class="product-image">
-                        <img src="images/t-shirt.jpg" alt="Classic T-shirt">
-                    </div>
-                    <h3>Classic T-Shirt</h3>
-                    <p class="price">$19.99</p>
-                    <a href="#contact" class="buy-button">Enquire Now</a>
+                    <p>$14.99</p>
                 </article>
 
                 <article class="product-card">
-                    <div class="product-image">
-                        <img src="images/blackpant.jpg" alt="Black trousers">
-                    </div>
-                    <h3>Black Pants</h3>
-                    <p class="price">$22.99</p>
-                    <a href="#contact" class="buy-button">Enquire Now</a>
+                    <img src="images/w3-jeans4.jpg" alt="Vintage Skinny Jeans">
+                    <h3>Vintage Skinny Jeans</h3>
+                    <p>$14.99</p>
                 </article>
 
                 <article class="product-card">
-                    <div class="product-image">
-                        <img src="images/shorts.jpg" alt="Blue denim shorts">
-                    </div>
-                    <h3>Denim Shorts</h3>
-                    <p class="price">$17.99</p>
-                    <a href="#contact" class="buy-button">Enquire Now</a>
+                    <img src="images/w3-jeans1.jpg" alt="Ripped Skinny Jeans">
+                    <h3>Ripped Skinny Jeans</h3>
+                    <p>$24.99</p>
                 </article>
 
             </div>
         </section>
 
         <!-- Newsletter -->
-        <section id="newsletter">
+        <section class="newsletter" id="newsletter">
             <h2>Subscribe</h2>
-            <p>Get special offers and updates from our store.</p>
+            <p>To get special offers and VIP treatment:</p>
 
             <form action="#" method="get">
                 <label for="newsletter-email">Email address</label>
                 <input
                     type="email"
                     id="newsletter-email"
-                    name="email"
-                    placeholder="Enter your email"
+                    placeholder="Enter e-mail"
                     required
                 >
                 <button type="submit">Subscribe</button>
             </form>
         </section>
 
-        <!-- Contact Section -->
-        <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Questions? Send us a message.</p>
-
-            <form action="#" method="get">
-                <label for="contact-name">Name</label>
-                <input
-                    type="text"
-                    id="contact-name"
-                    name="name"
-                    placeholder="Your name"
-                    required
-                >
-
-                <label for="contact-email">Email</label>
-                <input
-                    type="email"
-                    id="contact-email"
-                    name="email"
-                    placeholder="Your email"
-                    required
-                >
-
-                <label for="contact-subject">Subject</label>
-                <input
-                    type="text"
-                    id="contact-subject"
-                    name="subject"
-                    placeholder="Subject"
-                    required
-                >
-
-                <label for="contact-message">Message</label>
-                <textarea
-                    id="contact-message"
-                    name="message"
-                    placeholder="Write your message"
-                    rows="4"
-                    required
-                ></textarea>
-
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
-
-        <!-- About Section -->
-        <section id="about">
-            <h2>About Our Store</h2>
-            <p>
-                Discover everyday fashion, timeless denim, and comfortable
-                essentials. Explore our collection and find a style that
-                suits you.
-            </p>
-        </section>
-
         <!-- Footer -->
-        <footer id="footer">
-            <p>Clothing Store</p>
+        <footer class="footer" id="contact">
+
+            <section class="footer-column contact-column">
+                <h3>Contact</h3>
+                <p>Questions? Go ahead.</p>
+
+                <form action="#" method="get">
+                    <input type="text" placeholder="Name" aria-label="Name" required>
+                    <input type="email" placeholder="Email" aria-label="Email" required>
+                    <input type="text" placeholder="Subject" aria-label="Subject" required>
+                    <input type="text" placeholder="Message" aria-label="Message" required>
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+
+            <section class="footer-column about-column">
+                <h3>About</h3>
+                <a href="#about">About us</a>
+                <a href="#about">We're hiring</a>
+                <a href="#about">Support</a>
+                <a href="#about">Find store</a>
+                <a href="#about">Shipment</a>
+                <a href="#about">Payment</a>
+                <a href="#about">Gift card</a>
+                <a href="#about">Return</a>
+                <a href="#about">Help</a>
+            </section>
+
+            <section class="footer-column store-column" id="about">
+                <h3>Store</h3>
+                <p>Company Name</p>
+                <p>0044123123</p>
+                <p>ex@mail.com</p>
+
+                <h3 class="payment-heading">We accept</h3>
+                <p>Amex</p>
+                <p>Credit Card</p>
+            </section>
+
         </footer>
+
+        <div class="copyright">
+            Powered by <a href="https://www.w3schools.com/w3css/">w3.css</a>
+        </div>
 
     </main>
 
